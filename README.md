@@ -1,6 +1,6 @@
-# Movie Web Application
+# Employee Directory Application
 
-This Movie Web App project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Employee Directory Applicationp project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 With: Redux Thunk, Ant Design, Craco
 
 ## Available Scripts

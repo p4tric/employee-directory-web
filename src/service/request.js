@@ -6,7 +6,7 @@ import { message } from 'antd';
 axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
 axios.defaults.headers.post.Accept = 'application/json';
 
-const baseUrl = 'https://sometimes-maybe-flaky-api.gdshive.io';
+const baseUrl = 'http://api.additivasia.io/api/v1/assignment';
 /**
  * handle check request method
  * based on method, use axios to handle request

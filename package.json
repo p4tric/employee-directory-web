@@ -1,7 +1,6 @@
 {
   "name": "movie-web",
   "version": "0.1.0",
-  "homepage": "https://bangjeep-enterprise.com/hyenna",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.0.0",

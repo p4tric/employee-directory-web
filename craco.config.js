@@ -1,7 +1,7 @@
 const CracoLessPlugin = require('craco-less');
 const path = require('path');
 
-const target = 'https://sometimes-maybe-flaky-api.gdshive.io';
+const target = 'http://api.additivasia.io/api/v1/assignment';
 
 module.exports = {
   plugins: [
@@ -32,7 +32,7 @@ module.exports = {
     proxy: [
       {
         context: [
-          '/',
+          '/employees',
         ],
         target,
         changeOrigin: true,

@@ -4,10 +4,6 @@ import { useHistory } from 'react-router-dom';
 // antd
 import { Affix, Layout, Typography } from 'antd';
 
-// redux
-import { useDispatch, useSelector } from 'react-redux';
-import { setMovieDetail } from '@redux/actions';
-
 // components
 import LoadComponent from '@components/LoadComponent';
 
@@ -19,14 +15,9 @@ const { Footer, Header, Content } = Layout;
 const { Title } = Typography;
 
 const MainLayout = ({ children }) => {
-  const dispatch = useDispatch();
   const history = useHistory();
-  const { movieDetail } = useSelector(state => state);
 
-  const handleBack = () => {
-    dispatch(setMovieDetail(null));
-    history.push('/');
-  };
+  const handleBack = () => history.push('/');
 
   return (
     <Layout>
@@ -36,11 +27,7 @@ const MainLayout = ({ children }) => {
             className="main-layout-title"
             onClick={handleBack}
             level={2}>
-              Movie List
-              {movieDetail &&
-                <span className="main-layout-sub-title"
-                  type="secondary">Click here to go back to movie listing.</span>
-              }
+              Employee Directory Application
             </Title>
         </Header>
       </Affix>
@@ -49,13 +36,16 @@ const MainLayout = ({ children }) => {
       <Content className="main-layout-content">
         <Suspense fallback={<LoadComponent />}>{children}</Suspense>
       </Content>
+      {/*
+
+      */}
       <Footer className="main-layout-footer">
         <div className="footer-container">
           <div>
             <a style={{ textDecoration: 'none' }}
-              href="https://github.com/p4tric">
-              {`https://github.com/p4tric`}</a></div>
-          <div>[©2021 Movies Webapp]</div>
+              href="https://github.com/p4tric/employee-directory-web">
+              Github</a></div>
+          <div>[©2021 Employee Directory Application]</div>
         </div>
       </Footer>
     </Layout>
