@@ -1,0 +1,3 @@
+export const SET_MOVIE_LIST = 'SET MOVIE LIST';
+export const SET_MOVIE_DETAIL = 'SET MOVIE DETAIL';
+export const SET_LOADING = 'SET LOADING';
