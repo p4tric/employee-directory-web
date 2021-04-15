@@ -25,14 +25,14 @@ const RecursiveComponent = ({ name, position, level, items }) => {
 
       {level === 4 &&
         <>
-          <Text style={{ marginLeft: 20 }}>- {convertToTitleCase(position)}: {name}</Text>
+          <Text style={{ marginLeft: 30 }}>- {convertToTitleCase(position)}: {name}</Text>
           <br/>
         </>
       }
 
       {level === 5 &&
         <>
-          <Text style={{ marginLeft: 20 }}>- {convertToTitleCase(position)}: {name}</Text>
+          <Text style={{ marginLeft: 40 }}>- {convertToTitleCase(position)}: {name}</Text>
           <br/>
         </>
       }
